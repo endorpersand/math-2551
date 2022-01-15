@@ -135,7 +135,7 @@ $$
 \Large
 \begin{align*}
 &\vec{T}\cdot\vec{a} = a_T(\vec{T}\cdot\vec{T}) + a_N(\vec{T}\cdot\vec{N}) = a_T\\
-&\Vert\vec{T}\times\vec{a}\Vert = \Vert a_T(\vec{T}\times\vec{T})\Vert + \Vert a_N(\vec{T}\times\vec{N})\Vert = a_N
+&\Vert\vec{T}\times\vec{a}\Vert = \Vert a_T(\vec{T}\times\vec{T})\Vert + \Vert a_N(\vec{T}\times\vec{N})\Vert = \Vert a_N \vec{B} \Vert = a_N
 \end{align*}
 $$
 So,
