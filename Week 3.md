@@ -86,12 +86,12 @@ $$
 \end{align*}
 $$
 
-Since $\Large \vec{N}(t) = \frac{\vec{T}(t)}{\Vert\vec{T}(t)\Vert}$,
+Since $\Large \vec{N}(t) = \frac{\vec{T}'(t)}{\Vert\vec{T}'(t)\Vert}$,
 $$
 \Large
 \begin{align*}
-& \vec{N}(t)\Vert\vec{T}(t)\Vert = \vec{T}'(t)\\
-& \vec{a}(t) = \vec{N}(t)\Vert\vec{T}(t)\Vert \frac{ds}{dt} + \vec{T}(t) \frac{d^2s}{dt^2}
+& \vec{N}(t)\Vert\vec{T}'(t)\Vert = \vec{T}'(t)\\
+& \vec{a}(t) = \vec{N}(t)\Vert\vec{T}'(t)\Vert \frac{ds}{dt} + \vec{T}(t) \frac{d^2s}{dt^2}
 \end{align*}
 $$
 So,
@@ -106,7 +106,7 @@ $$
 **Normal component of acceleration:**
 $$
 \Large
-a_N = \Vert\vec{T}(t)\Vert \frac{ds}{dt} = \kappa\left(\frac{ds}{dt}\right)^2 = \kappa\Vert\vec{v}\Vert^2
+a_N = \Vert\vec{T}'(t)\Vert \frac{ds}{dt} = \kappa\left(\frac{ds}{dt}\right)^2 = \kappa\Vert\vec{v}\Vert^2
 
 $$
 $\left(\text{recall }\Large \kappa = \frac{\Vert\vec{T}'(t)\Vert}{ds/dt}\right)$
@@ -158,12 +158,14 @@ position, velocity, and acceleration can be represented in terms of:
 $$
 \Large
 \begin{align*}
-\vec{r} &= r\vec{u}_r = r\cos\theta\mathbf{i} + r\sin\theta\mathbf{j}\\
-\vec{v} &= \frac{d\vec{r}}{dt} = (-r\theta'\sin\theta +r'\cos\theta)\mathbf{i} + (r\theta'\cos\theta + r'\sin\theta)\mathbf{j}\\
+\vec{r} = r\vec{u}_r &= r\cos\theta\mathbf{i} + r\sin\theta\mathbf{j}\\
+\vec{v} = \frac{d\vec{r}}{dt} &= (-r\theta'\sin\theta +r'\cos\theta)\mathbf{i} + (r\theta'\cos\theta + r'\sin\theta)\mathbf{j}\\
 &= r\theta'\vec{u}_{\theta} + r'\vec{u}_r\\
+\vec{a} = \frac{d\vec{v}}{dt} &= (-r\theta'^2\vec{u}_r + (r\theta'' + r'\theta')\vec{u}_\theta) + (r''\vec{u}_r + r'\theta'\vec{u}_\theta)
 \end{align*}
+
 $$
-(Notice that you could've just product rule'd $\vec{r} = r\vec{u}_r$ and not have to had dealt with this mess!)
+(btw you can product rule $\vec{r} = r\vec{u}_r$ instead of expanding $\vec{r}$ and differentiating its components)
 
 $$
 \Large

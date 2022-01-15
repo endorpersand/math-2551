@@ -42,7 +42,7 @@ d = \left\Vert\text{proj}_\hat{n}{\overrightarrow{PS}}\right\Vert = \overrightar
 $$
 
 Use this to find distance between skew lines
-* Given lines $l_1, l_2$, find normalized normal vector $\vec{n}$, and project $\overrightarrow{PS}$
+* Given lines $l_1, l_2$, find unit normal vector of the plane $\Large \hat{n} = \frac{\vec{l_1} \times \vec{l_2}}{\Vert \vec{l_1} \times \vec{l_2}\Vert}$, and project $\overrightarrow{PS}$
 ## Intersecting lines & planes
 
 ### Lines
