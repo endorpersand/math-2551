@@ -41,8 +41,8 @@ $$
 d = \left\Vert\text{proj}_\hat{n}{\overrightarrow{PS}}\right\Vert = \overrightarrow{PS} \cdot \overbrace{\hat{n}}^{\mathclap{\text{normalized } \vec{n}}}
 $$
 
-Use this to find distance between skew lines
-* Given lines $l_1, l_2$, find unit normal vector of the plane $\Large \hat{n} = \frac{\vec{l_1} \times \vec{l_2}}{\Vert \vec{l_1} \times \vec{l_2}\Vert}$, and project $\overrightarrow{PS}$
+Use this to find **distance between skew lines**
+* Given lines $l_1, l_2$, find unit normal vector of the $l_1l_2$ plane, $\Large \hat{n} = \frac{\vec{l_1} \times \vec{l_2}}{\Vert \vec{l_1} \times \vec{l_2}\Vert}$, and project $\overrightarrow{PS}$ onto $\hat{n}$
 ## Intersecting lines & planes
 
 ### Lines
@@ -90,7 +90,7 @@ $$\Large Ax^2 + By^2 + Cz^2 + Dxy +Exz + Fyz + Gx + Hy + Jz + K = 0$$
 **Hyperboloid of Two Sheets**: $\Large -\frac{x^2}{a^2} - \frac{y^2}{b^2} + \frac{z^2}{c^2} = 1$
 ![[img/Pasted image 20220114214324.png|200]]
 
-**Hyperbolc Paraboloid**: $\Large \frac{y^2}{b^2} - \frac{x^2}{a^2} = \frac{z}{c}$
+**Hyperbolic Paraboloid**: $\Large \frac{y^2}{b^2} - \frac{x^2}{a^2} = \frac{z}{c}$
 ![[img/Pasted image 20220114214339.png|200]]
 
 $\Large \text{\frak{Saddle from "how to theoretically turn a sphere inside out" lookin ass}}$
