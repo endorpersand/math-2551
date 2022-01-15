@@ -31,6 +31,7 @@ $$
 \Large
 \vec{T}(t) = \frac{\vec{r}'(t)}{\Vert\vec{r}'(t)\Vert} = \frac{\vec{v}(t)}{\Vert\vec{v}(t)\Vert} = \frac{d\vec{r}/dt}{ds/dt}$$
 ($\vec{v}(t)$ normalized)
+
 # 13.4: Curvature
 If $\vec{T}$ is a unit vector of a smooth curve, the **curvature** function of the curve is
 $$
@@ -134,7 +135,7 @@ $$
 \Large
 \begin{align*}
 &\vec{T}\cdot\vec{a} = a_T(\vec{T}\cdot\vec{T}) + a_N(\vec{T}\cdot\vec{N}) = a_T\\
-&\vec{T}\times\vec{a} = a_T(\vec{T}\times\vec{T}) + a_N(\vec{T}\times\vec{N}) = a_N
+&\Vert\vec{T}\times\vec{a}\Vert = \Vert a_T(\vec{T}\times\vec{T})\Vert + \Vert a_N(\vec{T}\times\vec{N})\Vert = a_N
 \end{align*}
 $$
 So,
