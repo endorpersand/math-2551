@@ -66,12 +66,19 @@ If $\vec{T}'(t) \neq 0$, then
 ($\vec{T}'$ normalized)
 (this vector is $\perp$ to $\vec{T}$)
 
+## TNB Frame
 ![[Pasted image 20220114230709.png]]
 
-**Osculating plane**: Plane determined by unit tangent vector and principal normal vector
 **Binormal vector**: $\Large \vec{B}(t) = \vec{T}(t) \times \vec{N}(t)$
 
-**TNB frame / Finite frame**: The three vectors T, N, B
+**TNB frame / Frenet frame**: The three vectors T, N, B
+
+### Planes
+* **Osculating plane**: Plane between $\vec{T}$ and $\vec{N}$ (normal is $\vec{B}$)
+* **Normal plane**: Plane between $\vec{N}$ and $\vec{B}$ (normal is $\vec{T}$)
+* **Rectifying plane**: Plane between $\vec{T}$ and $\vec{B}$ (normal is $\vec{N}$)
+
+![[Pasted image 20220115222746.png|300]]
 
 # 13.5: Tangential & Normal Components of Acceleration
 
