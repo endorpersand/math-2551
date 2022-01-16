@@ -1,12 +1,13 @@
 # 14.1: Functions of Several Variables
 
+## Definition
 Suppose $D$ is a set of n-tuples of real numbers $(x_1, x_2, x_3, \dots, x_n)$.
 
 A **real-valued function** $f$ on $D$ returns a real number $\Large (f : D \to \mathbb{R})$
 - domain = $D$
 - range = set of values returned
 
-Example question
+### Examples
 
 Find domain of each:
 1. $f(x, y) = \sqrt{xy}$
