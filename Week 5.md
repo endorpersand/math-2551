@@ -72,7 +72,7 @@ $$
 
 # 14.6: Tangent Planes & Differentials
 ## Tangent Planes & Normal Lines
-**Tangent plane** to level surface $f(x, y, z) = c$ of a differentiable function $f$ at point $P_0(x-0, y_0, z_0)$ where the gradient is not zero is the plane through $P_0$ normal to $\nabla f(x_0, y_0, z_0)$.
+**Tangent plane** to level surface $f(x, y, z) = c$ of a differentiable function $f$ at point $P_0(x_0, y_0, z_0)$ where the gradient is not zero is the plane through $P_0$ normal to $\nabla f(x_0, y_0, z_0)$.
 $$
 \Large
 \begin{align*}
