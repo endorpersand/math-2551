@@ -1,0 +1,136 @@
+# 15.1, 15.2, 15.3: Double Integrals
+## Over Rectangles
+Let $f(x, y)$ be continuous over rectangle $\mathcal{R}: a \leq x \leq b, c \leq y \leq d$.
+Let $\mathcal{P}$ be a partition of $\mathcal{R}$ and let $m_{ij}$ and $M_{ij}$ be maximum values of f on the $i, j$ sub-rectangle $\mathcal{R}_{ij}$. Then:
+
+1. Lower sum
+$$
+\Large
+L_f(\mathcal{P}) = \sum\limits_{i=1}^m\sum\limits_{j=1}^n\overbrace{\Delta x_i \Delta y_j}^{\text{area}} m_{ij}
+$$
+2. Upper sum
+$$
+\Large
+U_f(\mathcal{P}) = \sum\limits_{i=1}^m\sum\limits_{j=1}^n\overbrace{\Delta x_i \Delta y_j}^{\text{area}} M_{ij}
+$$
+
+The **double integral** of $f$ over $\mathcal{P}$ is the unique number $I$ satisfying $L_f(\mathcal{P}) \leq I \leq U_f(\mathcal{P})$ for all partitions $\mathcal{P}$.
+$$
+\Large
+\begin{align*}
+I &= \iint_{\mathcal{R}}f(x,y)\,dx\,dy\\
+&\text{or}\\
+I &= \iint_{\mathcal{R}}f(x,y)\,dA
+\end{align*}
+$$
+### Fubini's Theorem (first form)
+If $f(x, y)$ is continuous throughout rectangular region $R: a \leq x \leq b, c \leq y \leq d$:
+$$
+\Large
+\iint_R f(x,y)\,dA = \int_c^d \int_a^b f(x,y)\,dx\,dy = \int_a^b \int_c^d f(x,y)\,dy\,dx
+$$
+### Volume
+If $f(x, y)$ is a positive function over a rectangular region $R$ in $xy$-plane, the volume of the solid region over the $xy$-plane bounded below by $R$ and above by $f(x, y)$ is:
+$$
+\Large
+V = \iint_Rf(x,y)\,dA
+$$
+### Example
+Evaluate $\Large \int_0^3 \int_{-2}^0 (x^2y - 2xy)\,dy\,dx$.
+
+(From bounds: $-2 \leq y \leq 0, 0 \leq x \leq 3$)
+
+Like partials, hold one constant while integrating other.
+$$
+\Large
+\begin{align*}
+&\int_{-2}^0 (x^2y - 2xy)\,dy\\
+&= \left.x^2\frac{y^2}{2}-xy^2\right|^0_{-2}\\
+&= -2x^2+4x
+\end{align*}
+$$
+$$
+\Large
+\begin{align*}
+&\int_{0}^3 (-2x^2 + 4x)\,dx\\
+&= \left.-\frac{2}{3}x^3+2x^2\right|^3_{0}\\
+&= 0
+\end{align*}
+$$
+## Over General Regions
+### Fubini's Theorem (stronger form)
+Let $f(x, y)$ be continuous on a region $R$.
+1. If $R$ is defined by $a \leq x \leq b, g_1(x) \leq y \leq g_2(x)$ (such that $g_1$ and $g_2$ are continuous on $[a, b]$)
+$$
+\Large
+\iint_Rf(x,y)\,dA = \int^b_a\int^{g_2(x)}_{g_1(x)}f(x, y)\,dy\,dx
+$$
+2. If $R$ is defined by $c \leq y \leq d, h_1(y) \leq x \leq h_2(y)$ (such that $h_1$ and $h_2$ are continuous on $[c, d]$)
+$$
+\Large
+\iint_Rf(x,y)\,dA = \int^d_c\int^{h_2(x)}_{h_1(x)}f(x, y)\,dx\,dy
+$$
+### Changing Order of Integration
+Vertical cross sections (1) and horizontal cross sections (2) are used.
+You can switch between them.
+![[Pasted image 20220120234806.png|300]]
+### Properties
+Given continuous functions $f(x, y), g(x, y)$ on bounded region $R$:
+1. Constant mutiple
+$$
+\Large
+\iint_R cf(x,y)\,dA = c\iint_Rf(x,y)dA
+$$
+2. Sum and difference
+$$
+\Large
+\iint_R (f(x,y)\pm g(x,y))\,dA = \iint_Rf(x,y)dA \pm \iint_Rg(x,y)dA
+$$
+3. Domination
+$$
+\Large
+\iint_R f(x,y)\,dA \geq 0 \text{ if } f(x, y) \geq 0 \text{ on } R
+$$
+$$
+\Large
+\iint_R f(x,y)\,dA \geq \iint_R g(x,y)\,dA \text{ if } f(x, y) \geq g(x, y) \text{ on } R
+$$
+4. Additivity: If $R$ is the union of two non-overlapping regions $R_1$ and $R_2$:
+$$
+\Large
+\iint_R f(x,y)\,dA = \iint_{R_1} f(x,y)\,dA + \iint_{R_2} f(x,y)\,dA
+$$
+### Example
+Evaluate $\iint_R x^3y\,dA$ where $R: 0 \leq x \leq 1, 0 \leq y \leq x$.
+R: 
+![[Pasted image 20220120233805.png|200]]
+
+$$
+\Large
+\begin{align*}
+\int^1_0&\underbrace{\int^x_0x^3y\,dy}\,dx\\
+&\left.\frac{1}{2}x^3y^2\right|^x_0\\
+&=\frac{1}{2}x^5
+\end{align*}
+$$
+$$
+\Large
+\begin{align*}
+&\int^1_0\frac{1}{2}x^5\,dx\\
+&=\left.\frac{1}{12}x^6\right|^1_0\\
+&=\frac{1}{12}
+\end{align*}
+$$
+## Application: Area
+The **area** of a closed, bounded plane region $R$ is:
+$$
+\Large
+A = \iint_R\,dA
+$$
+## Application: Average Value
+$$
+\Large
+\text{Average value of } f \text{ over } R = \frac{1}{\text{area of } R}\iint_Rf\,dA
+$$
+
+
