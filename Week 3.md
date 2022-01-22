@@ -6,7 +6,7 @@ $$
 \Large
 L = \int_a^b \sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2 + \left(\frac{dz}{dt}\right)^2}\,dt
 $$
-(pythagorean theorem between $dx, dy, dz$)
+(Derives from $ds^2 = dx^2 + dy^2 + dz^2$)
 
 This is equivalent to:
 $$
@@ -23,7 +23,7 @@ $$
 **Speed**:
 $$
 \Large
-speed = \frac{ds}{dt} = \Vert\vec{v}(t)\Vert
+\text{speed} = \frac{ds}{dt} = \Vert\vec{v}(t)\Vert
 $$
 
 **Unit Tangent Vector**: Unit vector... that's tangent to the smooth curve idk what you expected lmao
@@ -35,6 +35,7 @@ $$
 # 13.4: Curvature
 If $\vec{T}$ is a unit vector of a smooth curve, the **curvature** function of the curve is
 $$
+\Large
 \kappa = \left\Vert\frac{d\vec{T}}{ds}\right\Vert
 $$
 In the blue curve, the curvature at the point is related to circle that best fit curve at that point.
@@ -82,6 +83,11 @@ If $\vec{T}'(t) \neq 0$, then
 
 # 13.5: Tangential & Normal Components of Acceleration
 
+Goal: find $a_T, a_N$ in:
+$$
+\Large
+\vec{a}(t) = \vec{N}(t)a_N + \vec{T}(t)a_T
+$$
 Given position function $\vec{r}(t)$,
 $$
 \Large
@@ -161,23 +167,12 @@ Given coordinates $P(r, \theta)$,
 position, velocity, and acceleration can be represented in terms of:
 * $\Large \vec{u}_r = (\cos \theta)\mathbf{i} + (\sin \theta)\mathbf{j}$ (unit vector in direction of $\overrightarrow{OP}$)
 * $\Large \vec{u}_{\theta} = -(\sin \theta)\mathbf{i} + (\cos \theta)\mathbf{j}$ ( unit vector pointing in direction of increasing $\theta$)
-
 $$
 \Large
 \begin{align*}
-\vec{r} = r\vec{u}_r &= r\cos\theta\mathbf{i} + r\sin\theta\mathbf{j}\\
-\vec{v} = \frac{d\vec{r}}{dt} &= (-r\theta'\sin\theta +r'\cos\theta)\mathbf{i} + (r\theta'\cos\theta + r'\sin\theta)\mathbf{j}\\
-&= r\theta'\vec{u}_{\theta} + r'\vec{u}_r\\
-\vec{a} = \frac{d\vec{v}}{dt} &= (-r\theta'^2\vec{u}_r + (r\theta'' + r'\theta')\vec{u}_\theta) + (r''\vec{u}_r + r'\theta'\vec{u}_\theta)
-\end{align*}
-
-$$
-(btw you can product rule $\vec{r} = r\vec{u}_r$ instead of expanding $\vec{r}$ and differentiating its components)
-
-$$
-\Large
-\begin{align*}
-\vec{r} &= r\vec{u}_r\\
+\frac{d\vec{u}_r}{dt} &= \theta'\vec{u}_\theta \\
+\frac{d\vec{u}_\theta}{dt} &= -\theta'\vec{u}_r \\\\
+\vec{r} &= r\vec{u}_r = r\cos\theta\mathbf{i} + r\sin\theta\mathbf{j}\\
 \vec{v} &= r'\vec{u}_r + r\theta'\vec{u}_\theta\\
 \vec{a} &= (r''-r\theta'^2)\vec{u}_r + (r\theta''+2r'\theta')\vec{u}_\theta
 \end{align*}

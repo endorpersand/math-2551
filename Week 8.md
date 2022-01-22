@@ -27,7 +27,9 @@ $$
 \Large
 \iint_\Omega F(r, \theta)r\,dr\,d\theta = \int_\alpha^\beta\int_{\rho_1(\theta)}^{\rho_2(\theta)} F(r, \theta)r\,dr\,d\theta
 $$
-(Same applies for other orientations of this)
+Fubini's Theorem applies here. (Bounds can be switched or rearranged as described in Fubini's.)
+
+## Volume
 
 If $F(r, \theta) \geq 0$ over region $R$, then volume with $R$ as base, bounded above by $F(r, \theta)$ is:
 $$
@@ -39,13 +41,14 @@ $$
 
 # 15.5: Triple Integrals
 Instead of working with two variables continuous over a plane, THREE variables!
+
 ## Integration over a box
 Given $f(x, y, z)$ continuous on box $B: a_x \leq x \leq b_x, a_y \leq y \leq b_y, a_z \leq z \leq b_z$
 $$
 \Large
 \iiint_Bf(x,y,z)\,dV = \int_{a_z}^{b_z}\int_{a_y}^{b_y}\int_{a_x}^{b_x}f(x,y,z)\,dx\,dy\,dz
 $$
-Bounds are the same idea for general regions, too
+Fubini's Theorem applies here too.
 
 ## Volume
 $$
@@ -59,6 +62,28 @@ $$
 \text{Average Value of } F \text{ over } D = \frac{1}{\text{Volume of } D}\iiint_DF\,dV
 $$
 # 15.6: Applications of Double & Triple Integrals
+Recall from physics:
+
+(mass)
+$$
+\Large
+\begin{align*}
+dm &= \sigma\,dA \text{ (2 dimensions)}\\
+dm &= \rho\,dV \text{ (3 dimensions)}
+\end{align*}
+$$
+(moment)
+$$
+\Large
+dM = r\,dm
+$$
+(moment of inertia)
+$$
+\Large
+dI = r^2\,dm
+$$
+Rest of these formulas can essentially be defined by these relationships.
+
 ## Mass and First Moments
 ### In three dimensions
 Mass:
@@ -129,6 +154,6 @@ $$
 ## Joint Probability Density
 **Joint probability density function** $f$ is a function that satisfies:
 1. $\Large f(x, y) \geq 0$
-2. $\Large \int^\infty_\infty\int^\infty_\infty f(x,y)\,dx\,dy = 1$
+2. $\Large \int^\infty_{-\infty}\int^\infty_{-\infty} f(x,y)\,dx\,dy = 1$
 3. $\Large P((X, Y) \in R) = \iint_R f(x, y) \, dx \, dy$
 

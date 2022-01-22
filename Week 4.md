@@ -93,7 +93,8 @@ x^2 + 2y^2 &= \underbrace{\ln{c}}_{\mathclap{\text{constant}}}\text{ }(c > 0)
 $$
 *The level curves are ellipses.*
 
-3. ![[Pasted image 20220116093238.png]]
+3. 
+![[Pasted image 20220116093238.png]]
 - The contours are level curves.
 
 Recognize one of the curves as $x = -y^2$, so $x + y^2 = c$, and $f(x, y) = x + y^2$.
@@ -260,7 +261,7 @@ x - z^2 - (2zy+2x)\frac{\partial{z}}{\partial{y}} &= 0 \\
 $$
 
 ## Chain Rule
-### Simple  
+### $\large x, y$ as functions of one variable
 If $w = f(x, y)$ is differentiable and $x(t), y(t)$ are differentiable with respect to $t$, then $w = f(x(t), y(t))$ is differentiable with respect to $t$.
 $$
 \Large
@@ -293,11 +294,17 @@ $$
 \end{align*}
 $$
 
-### UH. PANIC.
+### $\large x, y$ as functions of multiple variables
 What if $u = u(x, y)$, $x = x(s, t)$, $y = y(s, t)$?
 
 You can find partial derivatives $\Large \frac{\partial{u}}{\partial{s}}$ and $\Large \frac{\partial{u}}{\partial{t}}$, replacing $\Large \frac{dx}{dt}$ in the simpler chain rule with the respective partial derivative.
-
+$$
+\Large
+\begin{align*}
+\frac{\partial u}{\partial s} &= \frac{\partial{u}}{\partial{x}}\frac{\partial x}{\partial s} + \frac{\partial{u}}{\partial{y}}\frac{\partial y}{\partial s}\\
+\frac{\partial u}{\partial t} &= \frac{\partial{u}}{\partial{x}}\frac{\partial x}{\partial t} + \frac{\partial{u}}{\partial{y}}\frac{\partial y}{\partial t}
+\end{align*}
+$$
 #### Example
 Given $z = 4e^x\ln{y}, x = \ln(uv), y = u\sin(v)$, express $\frac{\partial{z}}{\partial{u}}$ as a function of $u$ and $v$.
 
