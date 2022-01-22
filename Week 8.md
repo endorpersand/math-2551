@@ -95,8 +95,8 @@ First moments about the coordinate axes:
 $$
 \Large
 \begin{align*}
-M_{x} &= \iint_D x\sigma\,dA\\
-M_{y} &= \iint_D y\sigma\,dA
+M_{y} &= \iint_D x\sigma\,dA\\
+M_{x} &= \iint_D y\sigma\,dA
 \end{align*}
 $$
 Center of mass:
