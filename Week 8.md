@@ -62,7 +62,7 @@ $$
 \text{Average Value of } F \text{ over } D = \frac{1}{\text{Volume of } D}\iiint_DF\,dV
 $$
 # 15.6: Applications of Double & Triple Integrals
-Recall from physics:
+## Physics Definitions
 
 (mass)
 $$
