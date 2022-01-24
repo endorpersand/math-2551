@@ -94,15 +94,18 @@ $$
 **Calculating flux across a smooth closed plane curve**
 Let $\vec{F} = M\mathbf{i} + N\mathbf{j}$ and $\vec{r} = x(t)\mathbf{i} + y(t)\mathbf{j}$,
 then:
-![[Pasted image 20220123124512.png]]
+$$
+\Large
+\Phi \text{ across } C = \oint M\,dy - N\,dx
+$$
 
 (Integral is evaluated at any parametrization $\vec{r}$ that traces $C$ counterclockwise exactly once)
 $$
 \Large
-\left\|\vec{F} \times \frac{d\vec{r}}{ds}\right\| = \begin{vmatrix}
+\left\|\vec{F} \times d\vec{r}\right\| = \begin{vmatrix}
 M & N \\
-\frac{dx}{ds} & \frac{dy}{ds}
-\end{vmatrix} = M \frac{dy}{ds} - N \frac{dx}{ds}
+dx & dy
+\end{vmatrix} = M\,dy - N\,dx
 $$
 (Computing line integral with respect to $ds$ gives you the above)
 
@@ -171,8 +174,7 @@ $$
 $$
 ### Loop Property of Conservative Fields
 Equivalent statements
-(pretend that is the ccw integral)
-1. $\oint_C F \cdot d\vec{r} = 0$ around every loop (every closed curve $C$) in $D$.
+1. $\Large \oint_C F \cdot d\vec{r} = 0$ around every loop (every closed curve $C$) in $D$.
 2. The field $F$ is conservative on $D$.
 
 ### Exactness
