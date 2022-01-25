@@ -336,7 +336,21 @@ $$
 \frac{dy}{dx} = -\frac{F_x}{F_y}
 $$
 In 3D,
-If $z = f(x, y)$ and $F(x, y, f(x, y)) = 0$, you can do the same thing, but to find $\frac{\partial{z}}{\partial{x}}, \frac{\partial{z}}{\partial{y}}$
+If $z = z(x, y)$ and $F(x, y, z(x, y)) = 0$, you can do the same thing, but to find $\frac{\partial{z}}{\partial{x}}, \frac{\partial{z}}{\partial{y}}$
+
+**Why?**
+Let $F$ be written as $F(x, y(x))$.
+$$
+\Large
+\begin{align*}
+F(x, y(x)) &= 0\\
+\frac{d}{dx} F(x, y(x)) &= \frac{d}{dx}0\\
+\frac{\partial{F}}{\partial{x}}\frac{dx}{dx} + \frac{\partial{F}}{\partial{y}}\frac{dy}{dx}&= 0\\
+\frac{\partial{F}}{\partial{x}} + \frac{\partial{F}}{\partial{y}}\frac{dy}{dx}&= 0\\
+F_x + F_y\frac{dy}{dx}&= 0\\
+\frac{dy}{dx} = -\frac{F_x}{F_y}
+\end{align*}
+$$
 ### Examples
 ![[Pasted image 20220116112825.png]]
 ![[Pasted image 20220116113020.png]]

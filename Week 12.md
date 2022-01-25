@@ -79,25 +79,98 @@ $(0 \leq r \leq 2, 0 \leq \theta < 2\pi)$
 ## Surface Area
 A parametrized surface $\vec{r}(u, v) = f(u, v)\mathbf{i} + g(u, v)\mathbf{j} + h(u,v)\mathbf{k}$ is **smooth** if $\vec{r}_u$ and $\vec{r}_v$ are continuous and $\vec{r}_u \times \vec{r}_v \neq 0$ on the interior of the parameter domain.
 
+### SA of Parametrized Surfaces
 Given smooth surface $\vec{r}(u, v) = f(u, v)\mathbf{i} + g(u, v)\mathbf{j} + h(u,v)\mathbf{k}, a \leq u \leq b, c \leq v \leq d$:
 $$
 \Large
-A = \iint_R |\vec{r}_u \times \vec{r}_v|\,dA = \int_c^d\int_a^b|\vec{r}_u \times \vec{r}_v|\,du\,dv
+\sigma = \iint_R |\vec{r}_u \times \vec{r}_v|\,dA = \int_c^d\int_a^b|\vec{r}_u \times \vec{r}_v|\,du\,dv
 $$
-**Surface area of an implicit surface**:
+
+**Why?**
+For a small rectangular area $\Delta \sigma$ on the surface,
+$$
+\Large
+\begin{align*}
+\Delta \sigma &= |(\vec{r}_u \cdot \Delta u) \times (\vec{r}_v \cdot \Delta v)|\\
+&= |\vec{r}_u \times \vec{r}_v| \Delta u \Delta v
+\end{align*}
+$$
+So, $d\sigma = |\vec{r}_u \times \vec{r}_v|\,du\,dv$.
+
+### SA of Implicit Surfaces
 Area of surface $F(x, y, z) = c$ over closed & bounded region $R$:
 $$
 \Large
-SA = \iint_R \frac{\|\nabla F\|}{|\nabla F \cdot \hat{p}|}\,dA
+\sigma = \iint_R \frac{\|\nabla F\|}{|\nabla F \cdot \hat{p}|}\,dA
 $$
 (where $\hat{p} = \mathbf{i}, \mathbf{j}, \text{ or } \mathbf{k}$ is normal to $R$ and $\nabla F \cdot \hat{p} \neq 0$)
 
-**Surface area for $z = f(x, y)$**:
+**Why?**
+Create $\text{\frak{shadow region}}$ $R$ (a projection of the surface onto a coordinate plane), and let $\hat{p}$ be the normal vector of $R$.
+![[Pasted image 20220125120529.png|300]]
+
+Assume surface is smooth and require $\nabla \cdot \hat{p} \neq 0$.
+
+Let $R$ be the xy-plane (then $\hat{p} = \mathbf{k}$). The curve is parametrized as:
 $$
 \Large
-A = \iint_R \sqrt{f_x^2 + f_y^2 + 1}\,dx\,dy
+\vec{r}(x, y) = x\mathbf{i} + y\mathbf{j} + z(x, y)\mathbf{k}
 $$
-(This can be derived by creating parametrization $\vec{r}(x, y) = x\mathbf{i} + y\mathbf{j} + f(x,y)\mathbf{k}$ and applying parametrized surface integral formula)
+(note that $z(x, y)$ is not explicitly known)
+
+$$
+\Large
+\begin{align*}
+\vec{r}_x &= \mathbf{i} + \frac{\partial{z}}{\partial{x}}\mathbf{k} = \mathbf{i} - \frac{F_x}{F_z}\mathbf{k}\\
+\vec{r}_y &= \mathbf{j} + \frac{\partial{z}}{\partial{y}}\mathbf{k} = \mathbf{j} - \frac{F_y}{F_z}\mathbf{k}
+\end{align*}
+$$
+(recall $F(x, y, z(x, y)) = 0$, so [[Week 4#Implicit Differentiation again|implicit chain rule]] can be applied)
+
+Then:
+$$
+\Large
+\vec{r}_x \times \vec{r}_y = \frac{F_x}{F_z}\mathbf{i} + \frac{F_y}{F_z}\mathbf{j} + \mathbf{k}
+$$
+(i'm too lazy to show the determinant but just scroll down like 1 scroll, there's a similar cross prod.)
+
+$$
+\Large
+\begin{align*}
+\vec{r}_x \times \vec{r}_y &= \frac{1}{F_z}(F_x\mathbf{i} + F_y\mathbf{j} + F_z\mathbf{k})\\
+&= \frac{\nabla{F}}{F_z}\\
+&= \frac{\nabla{F}}{\nabla{F}\cdot\hat{p}}
+\end{align*}
+$$
+Plug back in and bam equation.
+
+### SA for $\large z = f(x, y)$
+$$
+\Large
+\sigma = \iint_R \sqrt{f_x^2 + f_y^2 + 1}\,dx\,dy
+$$
+**Why?**
+$z = f(x, y)$ can be parametrized as $\vec{r}(x, y) = x\mathbf{i} + y\mathbf{j} + f(x,y)\mathbf{k}$.
+
+Then:
+$$
+\Large
+\begin{align*}
+\vec{r}_x &= \mathbf{i} + f_x\mathbf{k}\\
+\vec{r}_y &= \mathbf{j} + f_y\mathbf{k}\\
+\vec{r}_x \times \vec{r}_y &= \begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k}\\
+1 & 0 & f_x\\
+0 & 1 & f_y
+\end{vmatrix} = -f_x\mathbf{i} - f_y\mathbf{j} + \mathbf{k}
+\end{align*}
+$$
+
+So:
+$$
+\Large
+\sigma = \iint_R |\vec{r}_u \times \vec{r}_v|\,dA = \sqrt{f_x^2 + f_y^2 + 1}\,dx\,dy
+$$
 
 # 16.6: Surface Integrals
 ## Definition
