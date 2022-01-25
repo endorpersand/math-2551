@@ -108,7 +108,7 @@ $$
 $$
 if for each $\epsilon > 0$, there exists $\delta > 0$ such that
 $$\Large
-0 < \Vert \vec{x} - \vec{x}_0 \Vert < \delta \implies |f(\vec{x}) - L| < \epsilon
+0 < \| \vec{x} - \vec{x}_0 \| < \delta \implies |f(\vec{x}) - L| < \epsilon
 $$
 (Essentially, as $\vec{x}$ approaches $\vec{x}_0$ from anywhere, $f(\vec{x})$ approaches $L$.)
 

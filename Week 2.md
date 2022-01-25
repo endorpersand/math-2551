@@ -19,7 +19,7 @@ If is line, $-\infty < t < \infty$. If t is bounded, is line segment.
 ![[Pasted image 20220114213643.png]]
 $$
 \Large
-d = \frac{\left\Vert\overrightarrow{PS} \times \vec{v}\right\Vert}{\Vert\vec{v}\Vert}
+d = \frac{\left\|\overrightarrow{PS} \times \vec{v}\right\|}{\|\vec{v}\|}
 $$
 
 ## Planes
@@ -32,17 +32,17 @@ Component equation:
 $$\Large A(x - x_{0}) + B(y - y_{0}) + C(z-z_{0}) = 0$$
 ### Angle between two planes
 * Parallel planes have the same normal.
-* Angle between two intersecting planes = acute angle between normals $\Large \left(\cos \theta =  \frac{|\vec{n}_{1}\cdot\vec{n}_{2}|}{\Vert\vec{n}_{1}\Vert\Vert\vec{n}_{2}\Vert}\right)$
+* Angle between two intersecting planes = acute angle between normals $\Large \left(\cos \theta =  \frac{|\vec{n}_{1}\cdot\vec{n}_{2}|}{\|\vec{n}_{1}\|\|\vec{n}_{2}\|}\right)$
 
 ### Distance from point to plane
 ![[Pasted image 20220114213751.png]]
 $$
 \Large
-d = \left\Vert\text{proj}_\hat{n}{\overrightarrow{PS}}\right\Vert = \overrightarrow{PS} \cdot \overbrace{\hat{n}}^{\mathclap{\text{normalized } \vec{n}}}
+d = \left\|\text{proj}_\hat{n}{\overrightarrow{PS}}\right\| = \overrightarrow{PS} \cdot \overbrace{\hat{n}}^{\mathclap{\text{normalized } \vec{n}}}
 $$
 
 Use this to find **distance between skew lines**
-* Given lines $l_1, l_2$, find unit normal vector of the $l_1l_2$ plane, $\Large \hat{n} = \frac{\vec{l_1} \times \vec{l_2}}{\Vert \vec{l_1} \times \vec{l_2}\Vert}$, and project $\overrightarrow{PS}$ onto $\hat{n}$
+* Given lines $l_1, l_2$, find unit normal vector of the $l_1l_2$ plane, $\Large \hat{n} = \frac{\vec{l_1} \times \vec{l_2}}{\| \vec{l_1} \times \vec{l_2}\|}$, and project $\overrightarrow{PS}$ onto $\hat{n}$
 ## Intersecting lines & planes
 
 ### Lines
@@ -111,7 +111,7 @@ $$
 if for every $\epsilon > 0$, there exists corresponding $\delta > 0$ such that for all $t \in D$,
 $$
 \Large
-\Vert \vec{r}(t) - \vec{L}\Vert < \epsilon \text{ whenever } 0 < \vert t - t_0\vert < \delta
+\| \vec{r}(t) - \vec{L}\| < \epsilon \text{ whenever } 0 < \| t - t_0\| < \delta
 $$
 
 idk why i wrote that cause basically the idea is: to find lim, find lim of each component
@@ -154,7 +154,7 @@ If $\vec{r}$ is position,
 * $\Large \vec{v} = \frac{d\vec{r}}{dt}$ (velocity)
 * $\Large \vec{a} = \frac{d\vec{v}}{dt}$ (acceleration)
 * direction of motion = direction of $\vec{v}$
-* speed = $\Vert\vec{v}\Vert$
+* speed = $\|\vec{v}\|$
 
 ## Integrals of Vector Functions
 $\vec{R}(t)$ is antiderivative of $\vec{r}(t)$ on interval $I$ if $\frac{d\vec{R}}{dt} = \vec{r}$ at each point in $I$.
@@ -169,7 +169,7 @@ $$
 1. $\int^b_a (\vec{f} + \vec{g})(t)\,dt = \int^b_a{\vec{f}(t)}\,dt + \int^b_a{\vec{g}(t)}\,dt$
 2. $\int^b_a (\alpha\vec{f})(t)\,dt = \alpha\int^b_a{\vec{f}(t)}\,dt$
 3.  $\int^b_a (\vec{c}\vec{f})(t)\,dt = \vec{c}\int^b_a{\vec{f}(t)}\,dt$
-4. $\left\Vert\int^b_a (\vec{f})(t)\,dt\right\Vert \leq \int^b_a{\left\Vert\vec{f}(t)\right\Vert}\,dt$
+4. $\left\|\int^b_a (\vec{f})(t)\,dt\right\| \leq \int^b_a{\left\|\vec{f}(t)\right\|}\,dt$
 
 ## Projectile Motion
 **Ideal projectile motion**: $\Large \text{\frak{bro use kinematics}}$

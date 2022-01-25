@@ -11,32 +11,32 @@ $$
 This is equivalent to:
 $$
 \Large
-L = \int_a^b \Vert\vec{v}\Vert\,dt
+L = \int_a^b \|\vec{v}\|\,dt
 $$
 
 **Arc Length Parameter**: Function *s* that finds directed distance along curve starting from $P(t_0)$ to some point $P(t)$
 $$
 \Large
-s(t) = \int_{t_0}^t \sqrt{\left(\frac{dx}{d\tau}\right)^2 + \left(\frac{dy}{d\tau}\right)^2 + \left(\frac{dz}{d\tau}\right)^2}\,d\tau = \int_{t_0}^t \Vert\vec{v}\Vert\,d\tau
+s(t) = \int_{t_0}^t \sqrt{\left(\frac{dx}{d\tau}\right)^2 + \left(\frac{dy}{d\tau}\right)^2 + \left(\frac{dz}{d\tau}\right)^2}\,d\tau = \int_{t_0}^t \|\vec{v}\|\,d\tau
 $$
 
 **Speed**:
 $$
 \Large
-\text{speed} = \frac{ds}{dt} = \Vert\vec{v}(t)\Vert
+\text{speed} = \frac{ds}{dt} = \|\vec{v}(t)\|
 $$
 
 **Unit Tangent Vector**: Unit vector... that's tangent to the smooth curve idk what you expected lmao
 $$
 \Large
-\vec{T}(t) = \frac{\vec{r}'(t)}{\Vert\vec{r}'(t)\Vert} = \frac{\vec{v}(t)}{\Vert\vec{v}(t)\Vert} = \frac{d\vec{r}/dt}{ds/dt}$$
+\vec{T}(t) = \frac{\vec{r}'(t)}{\|\vec{r}'(t)\|} = \frac{\vec{v}(t)}{\|\vec{v}(t)\|} = \frac{d\vec{r}/dt}{ds/dt}$$
 ($\vec{v}(t)$ normalized)
 
 # 13.4: Curvature
 If $\vec{T}$ is a unit vector of a smooth curve, the **curvature** function of the curve is
 $$
 \Large
-\kappa = \left\Vert\frac{d\vec{T}}{ds}\right\Vert
+\kappa = \left\|\frac{d\vec{T}}{ds}\right\|
 $$
 In the blue curve, the curvature at the point is related to circle that best fit curve at that point.
 ![[Pasted image 20220114225519.png]]
@@ -45,7 +45,7 @@ In the blue curve, the curvature at the point is related to circle that best fit
 For smooth curve $\vec{r}$, curvature can be written as scalar function:
 $$
 \Large
-\kappa = \left\Vert\frac{d\vec{T}/dt}{ds/dt}\right\Vert = \frac{\Vert\vec{T}'(t)\Vert}{\Vert\vec{v}(t)\Vert}
+\kappa = \left\|\frac{d\vec{T}/dt}{ds/dt}\right\| = \frac{\|\vec{T}'(t)\|}{\|\vec{v}(t)\|}
 $$
 
 ## Circle of Curvature
@@ -63,7 +63,7 @@ The **radius of curvature** at point $P$ is $\Large \rho = \frac{1}{\kappa}$.
 If $\vec{T}(t)$ is unit tangent vector and $\vec{T}'(t) = 0$, then unit tangent vector d/n change direction.
 If $\vec{T}'(t) \neq 0$, then
 
-**Principal normal vector** = $\Large \vec{N}(t) = \frac{\vec{T}'(t)}{\Vert\vec{T}'(t)\Vert}$
+**Principal normal vector** = $\Large \vec{N}(t) = \frac{\vec{T}'(t)}{\|\vec{T}'(t)\|}$
 ($\vec{T}'$ normalized)
 (this vector is $\perp$ to $\vec{T}$)
 
@@ -99,19 +99,19 @@ $$
 \end{align*}
 $$
 
-Since $\Large \vec{N}(t) = \frac{\vec{T}'(t)}{\Vert\vec{T}'(t)\Vert}$,
+Since $\Large \vec{N}(t) = \frac{\vec{T}'(t)}{\|\vec{T}'(t)\|}$,
 $$
 \Large
 \begin{align*}
-& \vec{N}(t)\Vert\vec{T}'(t)\Vert = \vec{T}'(t)\\
-& \vec{a}(t) = \vec{N}(t)\Vert\vec{T}'(t)\Vert \frac{ds}{dt} + \vec{T}(t) \frac{d^2s}{dt^2}
+& \vec{N}(t)\|\vec{T}'(t)\| = \vec{T}'(t)\\
+& \vec{a}(t) = \vec{N}(t)\|\vec{T}'(t)\| \frac{ds}{dt} + \vec{T}(t) \frac{d^2s}{dt^2}
 \end{align*}
 $$
 So,
 **Tangential component of acceleration:**
 $$
 \Large
-a_T = \frac{d^2s}{dt^2}=\frac{d}{dt}\Vert\vec{v}\Vert
+a_T = \frac{d^2s}{dt^2}=\frac{d}{dt}\|\vec{v}\|
 $$
 * Only dependent on change of speed of object
 * If speed is constant, $a_T = 0$ and acceleration is directed entirely towards center of curvature
@@ -119,10 +119,10 @@ $$
 **Normal component of acceleration:**
 $$
 \Large
-a_N = \Vert\vec{T}'(t)\Vert \frac{ds}{dt} = \kappa\left(\frac{ds}{dt}\right)^2 = \kappa\Vert\vec{v}\Vert^2
+a_N = \|\vec{T}'(t)\| \frac{ds}{dt} = \kappa\left(\frac{ds}{dt}\right)^2 = \kappa\|\vec{v}\|^2
 
 $$
-$\left(\text{recall }\Large \kappa = \frac{\Vert\vec{T}'(t)\Vert}{ds/dt}\right)$
+$\left(\text{recall }\Large \kappa = \frac{\|\vec{T}'(t)\|}{ds/dt}\right)$
 
 ## Curvature and Torsion
 **Torsion**:
@@ -140,7 +140,7 @@ $$
 \cdots & \vec{r}' & \cdots \\
 \cdots & \vec{r}'' & \cdots \\
 \cdots & \vec{r}''' & \cdots \\
-\end{vmatrix}}{\Vert\vec{v} \times \vec{a}\Vert^2}
+\end{vmatrix}}{\|\vec{v} \times \vec{a}\|^2}
 $$
 
 ### Formulas for Curvature and Torsion
@@ -148,7 +148,7 @@ $$
 \Large
 \begin{align*}
 &\vec{T}\cdot\vec{a} = a_T(\vec{T}\cdot\vec{T}) + a_N(\vec{T}\cdot\vec{N}) = a_T\\
-&\Vert\vec{T}\times\vec{a}\Vert = \Vert a_T(\vec{T}\times\vec{T})\Vert + \Vert a_N(\vec{T}\times\vec{N})\Vert = \Vert a_N \vec{B} \Vert = a_N
+&\|\vec{T}\times\vec{a}\| = \| a_T(\vec{T}\times\vec{T})\| + \| a_N(\vec{T}\times\vec{N})\| = \| a_N \vec{B} \| = a_N
 \end{align*}
 $$
 So,
@@ -156,11 +156,11 @@ $$
 \Large
 \begin{align*}
 &a_T = \frac{\vec{v} \cdot \vec{a}}{ds/dt}\\
-&a_N = \frac{\Vert\vec{v} \times \vec{a}\Vert}{ds/dt} = \kappa\left(\frac{ds}{dt}\right)^2
+&a_N = \frac{\|\vec{v} \times \vec{a}\|}{ds/dt} = \kappa\left(\frac{ds}{dt}\right)^2
 \end{align*}$$
 And thus,
 $$\Large
-\kappa = \frac{\Vert\vec{v} \times \vec{a}\Vert}{(ds/dt)^3}$$
+\kappa = \frac{\|\vec{v} \times \vec{a}\|}{(ds/dt)^3}$$
 
 # 13.6: Motion in Polar Coordinates
 Given coordinates $P(r, \theta)$,

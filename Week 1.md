@@ -3,14 +3,14 @@
 Area of parallelogram:  
 ![[img/IMG_6473.jpg|300]]
 
-$$\Large \Vert \vec{b} \Vert \underbrace{\left\Vert \vec{a} \right\Vert \sin \theta}_{h}$$
+$$\Large \| \vec{b} \| \underbrace{\left\| \vec{a} \right\| \sin \theta}_{h}$$
 
 **Cross product**: vector $\perp$ to $\vec{a}$ and $\vec{b}$ whose length is this area
 $$
-\Large \left\Vert \vec{A} \times \vec{B} \right\Vert = \Vert \vec{A} \Vert \Vert \vec{B} \Vert \sin \theta$$
+\Large \left\| \vec{A} \times \vec{B} \right\| = \| \vec{A} \| \| \vec{B} \| \sin \theta$$
 
 $$
-\Large \vec{A} \times \vec{B} = \left(\Vert \vec{A} \Vert \Vert \vec{B} \Vert \sin \theta\right)\underbrace{\hat{n}}_{\mathclap{\text{Unit vector } \perp \text{ to plane AB}}}
+\Large \vec{A} \times \vec{B} = \left(\| \vec{A} \| \| \vec{B} \| \sin \theta\right)\underbrace{\hat{n}}_{\mathclap{\text{Unit vector } \perp \text{ to plane AB}}}
 $$
 
 $\vec{a}$ and $\vec{b}$ are parallel if $\vec{a} \times \vec{b} = 0$
