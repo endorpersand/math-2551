@@ -125,7 +125,7 @@ $$
 &= \oint M\,dy - N\,dx
 \end{align*}
 $$
-c
+
 # 16.3: Path Independence, Conservative Fields, Potential Functions
 ## Definitions
 Let $\vec{F}$ be a vector field defined on open region $D$ in space.
