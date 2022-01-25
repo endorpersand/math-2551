@@ -77,38 +77,55 @@ $$
 ## Physics
  ### Work 
 $$\Large W = \int_C \vec{F}\cdot d\vec{r}$$
-($\vec{F}$ is force)
+- $\vec{F}$ is force
 
  ### Flow 
 $$\Large \text{Flow} = \int_C \vec{F}\cdot \vec{T}\,ds$$
-($\vec{F}$ is velocity)
+- $\vec{F}$ is velocity
+
 This integral is called a **flow integral**. If the curve starts and ends at the same point, the flow is called the *circulation* around the curve.
 
- ### Flux
+ ### Flux (across a smooth simple closed plane curve)
 $$
 \Large
-\Phi = \int_C \vec{F}\cdot\vec{n}\,ds
+\Phi = \int_C \vec{F}\cdot\hat{n}\,ds
 $$
-($\vec{F}$ is velocity, $C$ is a smooth simple closed curve (starts & ends at same place and does not cross itself))
+- $\vec{F}$ is a vector field in the plane, $M(x, y)\mathbf{i} + N(x, y)\mathbf{j}$
+- $C$ is a smooth simple closed curve (starts & ends at same place and does not cross itself)
+- $\hat{n}$ is the outward-pointing unit vector normal to $C$
 
-**Calculating flux across a smooth closed plane curve**
-Let $\vec{F} = M\mathbf{i} + N\mathbf{j}$ and $\vec{r} = x(t)\mathbf{i} + y(t)\mathbf{j}$,
-then:
+**Alternative form**:
 $$
 \Large
 \Phi \text{ across } C = \oint M\,dy - N\,dx
 $$
 
 (Integral is evaluated at any parametrization $\vec{r}$ that traces $C$ counterclockwise exactly once)
+
+**Why?**
+![[Pasted image 20220125112758.png|300]]
+
+Assuming counterclockwise, 
 $$
 \Large
-\left\|\vec{F} \times d\vec{r}\right\| = \begin{vmatrix}
-M & N \\
-dx & dy
-\end{vmatrix} = M\,dy - N\,dx
+\hat{n} = \vec{T} \times \mathbf{k} = \begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+\frac{dx}{ds} & \frac{dy}{ds} & 0 \\
+0 & 0 & 1
+\end{vmatrix} = \frac{dy}{ds}\mathbf{i} - \frac{dx}{ds}\mathbf{j}
 $$
-(Computing line integral with respect to $ds$ gives you the above)
 
+Then:
+
+$$
+\Large
+\begin{align*}
+\Phi &= \int_C \vec{F}\cdot\hat{n}\,ds \\
+&= \int_C \langle M, N\rangle\cdot\left\langle \frac{dy}{ds}, \frac{-dx}{ds}\right\rangle\,ds\\
+&= \oint M\,dy - N\,dx
+\end{align*}
+$$
+c
 # 16.3: Path Independence, Conservative Fields, Potential Functions
 ## Definitions
 Let $\vec{F}$ be a vector field defined on open region $D$ in space.

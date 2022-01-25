@@ -36,10 +36,26 @@ y &= r \sin\theta = \rho \sin \phi \sin \theta\\
 \end{align*}
 $$
 
-Triple Integrals:
+### Triple Integral Definition
 $$
 \Large
 \iiint_T \,dV = \iiint_T \rho^2\sin\phi\,d\rho\,d\phi\,d\theta
+$$
+
+**Why?**
+
+![[IMG_6645.jpg]]
+
+$\Delta V$ is the curved box above. Assuming $\Delta V$ is a rectangular prism (which is converges to at small $\Delta V$),
+$$
+\Large
+\begin{align*}
+\Delta V &= (\Delta \rho)\overbrace{(\rho \,\Delta \phi)}^{\mathclap{\text{arclength from the side}}}\underbrace{(r \,\Delta \theta)}_{\mathclap{\text{arclength from the top}}}\\\\
+&= \rho r \,\Delta\rho \,\Delta\phi \,\Delta\theta\\
+&= \rho (\rho \sin \phi) \,\Delta\rho \,\Delta\phi \,\Delta\theta\\
+&= \rho^2 \sin\phi \,\Delta\rho \,\Delta\phi \,\Delta\theta\\\\
+dV &= \rho^2 \sin\phi \,d\rho \,d\phi \,d\theta
+\end{align*}
 $$
 
 # 15.8: Integration by Substitution
