@@ -87,7 +87,7 @@ This integral is called a **flow integral**. If the curve starts and ends at the
  ### Flux
 $$
 \Large
-\Phi = \int_C \vec{F}\cdot\vec{N}\,ds
+\Phi = \int_C \vec{F}\cdot\vec{n}\,ds
 $$
 ($\vec{F}$ is velocity, $C$ is a smooth simple closed curve (starts & ends at same place and does not cross itself))
 

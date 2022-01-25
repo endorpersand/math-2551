@@ -2,10 +2,8 @@
 **Circulation density** of a vector field $\vec{F} = M\mathbf{i} + N\mathbf{j}$ at point $(x, y)$ is the scalar expression:
 $$
 \Large
-\frac{\partial{N}}{\partial{x}}- \frac{\partial{M}}{\partial{y}}
+\text{curl }\vec{F} \cdot \mathbf{k} = \frac{\partial{N}}{\partial{x}}- \frac{\partial{M}}{\partial{y}}
 $$
-
-This expression is also **the k-component of the curl**, $(\text{curl } \vec{F}) \cdot \mathbf{k}$.
 
 **Divergence (flux density)** of vector field $\vec{F} = M\mathbf{i} + N\mathbf{j}$ at $(x, y)$ is:
 $$
@@ -45,7 +43,7 @@ A_R &= \iint_R\,dy\,dx \\
 $$
 
 # 16.5: Surfaces and Area
-## Parametrized Surfaces
+## Parameterized Surfaces
 A **parametrized surface** is given by: $\vec{r}(u, v) = f(u, v)\mathbf{i} + g(u,v)\mathbf{j} + h(u,v)\mathbf{k}$.
 The domain is the set of points in the $uv$-plane that can be substituted into $\vec{r}$.
 
@@ -99,6 +97,8 @@ $$
 \Large
 A = \iint_R \sqrt{f_x^2 + f_y^2 + 1}\,dx\,dy
 $$
+(This can be derived by creating parametrization $\vec{r}(x, y) = x\mathbf{i} + y\mathbf{j} + f(x,y)\mathbf{k}$ and applying parametrized surface integral formula)
+
 # 16.6: Surface Integrals
 ## Definition
 **Surface area differential**:
@@ -136,3 +136,30 @@ $$
 \iint_SG(x,y,z)d\sigma = \iint_RG(x,y,f(x,y))\sqrt{f_x^2 + f_y^2 + 1}\,dx\,dy
 $$
 ($R$ is the region on the $xy$-plane)
+
+## Surface integrals of vector fields
+Let $\vec{F}$ be a vector field in 3D space with continuous components defined over a smooth surface $S$, with normal unit vectors $\hat{n}$ orienting $S$.
+The **surface integral of $\vec{F}$ over $S$**:
+$$
+\Large
+\iint_S \vec{F}\cdot\hat{n}\,d\sigma
+$$
+This integral is also called the **flux** of the vector field $\vec{F}$ across $S$.
+
+If the surface being integrated over can be written as $g(x, y, z) = c$,
+$$
+\Large
+\hat{n} = \pm \frac{\nabla{g}}{\|\nabla{g}\|}
+$$
+
+If the surface being integrated over can be parametrized as $\vec{r}(u, v)$, the surface integral can be calculated as:
+$$
+\Large
+\iint_S \vec{F} \cdot (\vec{r}_u \times \vec{r}_v)\,du\,dv
+$$
+## Mass & Moment
+Same as [[Week 8#Physics Definitions]], but with:
+$$
+\Large
+dm = \delta d\sigma
+$$
