@@ -57,7 +57,7 @@ $$
 dV &= \rho^2 \sin\phi \,d\rho \,d\phi \,d\theta
 \end{align*}
 $$
-Related: [[#Derivation of Spherical Triple Integral by Jacobins|purely algebraic derivation]]
+Related: [[#Derivation of Spherical Triple Integral by Jacobians|purely algebraic derivation]]
 # 15.8: Integration by Substitution
 ## Jacobians
 
