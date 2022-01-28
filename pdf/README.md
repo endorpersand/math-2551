@@ -18,7 +18,8 @@
 - [14.6: Tangent Planes & Differentials](./14.6%20Tangent%20Planes%20&%20Differentials.md)
 - [14.7: Extreme Values](./14.7%20Extreme%20Values.pdf)
 ## Week 6
-- [14.8, 14.9, 14.10: Partials & Gradient Extras](./14.8-10%20Partials%20&%20Gradient%20Extras.pdf)
+- [14.8: Lagrange Multipliers](./14.8%20Lagrange%sMultipliers.pdf)
+- [14.9, 14.10: Partials & Gradient Extras](./14.9-10%20Taylor%20&%20Constrained%20Partials.pdf)
 
 # Module 3
 ## Week 7
