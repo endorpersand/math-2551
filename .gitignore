@@ -1,5 +1,11 @@
 **/.DS_Store
-.obsidian/
+
+# rm obsidian
+.obsidian/**
+
+# except for graph & plugins
+!.obsidian/graph.json
+!.obsidian/core-plugins.json
 
 # v this is my latex dump file and it doesn't need to be shown so goodbye
 _scratch.md
