@@ -48,7 +48,7 @@ $$
 \Large
 \begin{align*}
 \nabla f(x, y) &= (4xe^x\cos(x^2 + y)+2e^x\sin(x^2+y))\mathbf{i} \\
-&\hspace{1em}+2e^xcos(x^2 + y)\mathbf{j}\\
+&\hspace{1em}+2e^x\cos(x^2 + y)\mathbf{j}\\
 \end{align*}
 $$
 ![[Pasted image 20220118155110.png]]
