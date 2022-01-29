@@ -1,5 +1,5 @@
 {
-  "collapse-filter": true,
+  "collapse-filter": false,
   "search": "#week",
   "showTags": false,
   "showAttachments": false,
@@ -46,6 +46,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1.4452719046897804,
+  "scale": 1.378496221679935,
   "close": true
 }
