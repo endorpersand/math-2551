@@ -38,7 +38,7 @@
 * [16.3: Path Independence & Conservatives](./16.3%20Path%20Independence%20&%20Conservatives.pdf)
 ## Week 12
 - [16.4: Green's Theorem](./16.4%20Green's%20Theorem.pdf)
-* [16.5: Surfaces & Surface Integrals](./16.5%20Surfaces%20&%20Surface%20Integrals.pdf)
+* [16.5, 16.6: Surfaces & Surface Integrals](./16.5-6%20Surfaces%20&%20Surface%20Integrals.pdf)
 ## Week 13
 - [16.7: Stokes' and Divergence Theorems](./16.7%20Stokes'%20and%20Divergence%20Theorems.pdf)
 
