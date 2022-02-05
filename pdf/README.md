@@ -15,10 +15,10 @@
 - [14.3, 14.4: Partial Derivatives](./14.3-4%20Partial%20Derivatives.pdf)
 ## Week 5
 - [14.5: Directional Derivatives & Gradient](./14.5%20Directional%20Derivatives%20&%20Gradient.pdf)
-- [14.6: Tangent Planes & Differentials](./14.6%20Tangent%20Planes%20&%20Differentials.md)
+- [14.6: Tangent Planes & Differentials](./14.6%20Tangent%20Planes%20&%20Differentials.pdf)
 - [14.7: Extreme Values](./14.7%20Extreme%20Values.pdf)
 ## Week 6
-- [14.8: Lagrange Multipliers](./14.8%20Lagrange%sMultipliers.pdf)
+- [14.8: Lagrange Multipliers](./14.8%20Lagrange%20Multipliers.pdf)
 - [14.9, 14.10: Partials & Gradient Extras](./14.9-10%20Taylor%20&%20Constrained%20Partials.pdf)
 
 # Module 3
