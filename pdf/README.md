@@ -40,7 +40,7 @@
 - [16.4: Green's Theorem](./16.4%20Green's%20Theorem.pdf)
 * [16.5, 16.6: Surfaces & Surface Integrals](./16.5-6%20Surfaces%20&%20Surface%20Integrals.pdf)
 ## Week 13
-- [16.7: Stokes' and Divergence Theorems](./16.7%20Stokes'%20and%20Divergence%20Theorems.pdf)
+- [16.7, 16.8: Stokes' and Divergence Theorems](./16.7-8%20Stokes'%20and%20Divergence%20Theorems.pdf)
 
 # Module -2
 ## Week -10
