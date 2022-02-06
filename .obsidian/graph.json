@@ -1,11 +1,11 @@
 {
-  "collapse-filter": true,
-  "search": "#week",
-  "showTags": false,
+  "collapse-filter": false,
+  "search": "#module",
+  "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "#module1",
@@ -46,6 +46,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.9537971486243156,
-  "close": false
+  "scale": 1.3391246980305969,
+  "close": true
 }
