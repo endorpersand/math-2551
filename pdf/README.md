@@ -3,7 +3,7 @@
 - [12.4: Cross Products](./12.4%20Cross%20Products.pdf)
 ## Week 2
 - [12.5: Lines & Planes in Space](./12.5%20Lines%20&%20Planes%20in%20Space.pdf)
-- [12.6: Cylinders and Quadric Surfaces](./12.6%20Cylinders%20and%20Quadric%20Surfaces.pdf)
+- [12.6: Cylinders & Quadric Surfaces](12.6%20Cylinders%20&%20Quadric%20Surfaces.pdf)
 - [13.1, 13.2: Vector Functions](./13.1-2%20Vector%20Functions.pdf)
 ## Week 3
 - [13.3, 13.4, 13.5: Arc Length, Curvature, TNB](./13.3-5%20Arc%20Length,%20Curvature,%20TNB.pdf)
@@ -40,7 +40,7 @@
 - [16.4: Green's Theorem](./16.4%20Green's%20Theorem.pdf)
 * [16.5, 16.6: Surfaces & Surface Integrals](./16.5-6%20Surfaces%20&%20Surface%20Integrals.pdf)
 ## Week 13
-- [16.7, 16.8: Stokes' and Divergence Theorems](./16.7-8%20Stokes'%20and%20Divergence%20Theorems.pdf)
+- [16.7, 16.8: Stokes' & Divergence Theorems](16.7-8%20Stokes'%20&%20Divergence%20Theorems.pdf)
 
 # Module -2
 ## Week -10
